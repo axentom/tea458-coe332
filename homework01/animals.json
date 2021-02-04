@@ -1,0 +1,144 @@
+{
+  "animal": [
+    {
+      "head": "bull",
+      "body": "fawn-tarpon",
+      "arms": 10,
+      "legs": 3,
+      "tails": 13
+    },
+    {
+      "head": "bull",
+      "body": "cow-mayfly",
+      "arms": 4,
+      "legs": 12,
+      "tails": 16
+    },
+    {
+      "head": "snake",
+      "body": "lizard-bat",
+      "arms": 6,
+      "legs": 6,
+      "tails": 12
+    },
+    {
+      "head": "snake",
+      "body": "bat-grub",
+      "arms": 4,
+      "legs": 9,
+      "tails": 13
+    },
+    {
+      "head": "bunny",
+      "body": "feline-tahr",
+      "arms": 6,
+      "legs": 6,
+      "tails": 12
+    },
+    {
+      "head": "bull",
+      "body": "robin-stud",
+      "arms": 6,
+      "legs": 12,
+      "tails": 18
+    },
+    {
+      "head": "bunny",
+      "body": "frog-falcon",
+      "arms": 4,
+      "legs": 3,
+      "tails": 7
+    },
+    {
+      "head": "raven",
+      "body": "foal-fish",
+      "arms": 2,
+      "legs": 12,
+      "tails": 14
+    },
+    {
+      "head": "raven",
+      "body": "eft-toucan",
+      "arms": 2,
+      "legs": 12,
+      "tails": 14
+    },
+    {
+      "head": "lion",
+      "body": "kid-mink",
+      "arms": 10,
+      "legs": 12,
+      "tails": 22
+    },
+    {
+      "head": "bull",
+      "body": "joey-cobra",
+      "arms": 10,
+      "legs": 12,
+      "tails": 22
+    },
+    {
+      "head": "lion",
+      "body": "hawk-skink",
+      "arms": 10,
+      "legs": 6,
+      "tails": 16
+    },
+    {
+      "head": "raven",
+      "body": "akita-leech",
+      "arms": 6,
+      "legs": 3,
+      "tails": 9
+    },
+    {
+      "head": "lion",
+      "body": "collie-sponge",
+      "arms": 2,
+      "legs": 9,
+      "tails": 11
+    },
+    {
+      "head": "lion",
+      "body": "moray-swift",
+      "arms": 4,
+      "legs": 6,
+      "tails": 10
+    },
+    {
+      "head": "lion",
+      "body": "ferret-buck",
+      "arms": 4,
+      "legs": 12,
+      "tails": 16
+    },
+    {
+      "head": "raven",
+      "body": "pup-lynx",
+      "arms": 8,
+      "legs": 12,
+      "tails": 20
+    },
+    {
+      "head": "raven",
+      "body": "ant-cow",
+      "arms": 2,
+      "legs": 6,
+      "tails": 8
+    },
+    {
+      "head": "snake",
+      "body": "drum-man",
+      "arms": 10,
+      "legs": 6,
+      "tails": 16
+    },
+    {
+      "head": "bull",
+      "body": "horse-panda",
+      "arms": 6,
+      "legs": 12,
+      "tails": 18
+    }
+  ]
+}
