@@ -14,8 +14,8 @@ def make_head():
 This Function pulls two random animals from the petname library and mashes their bodies together for Dr. Moreau's beast
 """
 def make_body():
-    body1 = petname.generate(1)
-    body2 = petname.generate(1)
+    body1 = petname.name()
+    body2 = petname.name()
     body = body1 + "-" + body2
     return body
 
