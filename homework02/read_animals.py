@@ -2,13 +2,19 @@ import json
 import random
 import sys
 
+def check_parents_index_type(parent_index): # Checks to see if input parent index can be converted to type int
+    try:
+        int(parent_index)
+        return(f'Parent index: {parent_index} type pass')
+    except ValueError:
+        return(f'Parent index: {parent_index} type FAIL')
+
 def check_animals_dict_length(): # Check to see if animals.json has enough values in it to breed
     with open('animals.json', 'r') as f:
         animals = json.load(f)
     count = len(animals['animal'])
     if (count < 2):
         return('animals dict length FAIL')
-        sys.exit()
     else:
         return('animals dict length pass')
 
@@ -18,10 +24,8 @@ def check_parents_index_range(parent1_index, parent2_index): # Checks that the i
     count = len(animals['animal'])
     if (parent1_index not in range(0,count)):
         return(f'Parent 1 index: {parent1_index} range FAIL')
-        sys.exit()
     elif (parent2_index not in range(0,count)):
         return(f'Parent 2 index: {parent2_index} range FAIL')
-        sys.exit()
     else:
         return(f'Parent indices: {parent1_index} and {parent2_index} range pass')
 
@@ -69,13 +73,21 @@ def random_animal():
     print(animals['animal'][random.randint(0,19)])
 
 def main():
-    p1 = int(sys.argv[1])
-    p2 = int(sys.argv[2])
-    
+# Recieve inputs and check type
+    p1 = (sys.argv[1])
+    p2 = (sys.argv[2])
+    print(check_parents_index_type(p1))
+    print(check_parents_index_type(p2))
+# Convert inputs to int
+    p1_int = int(p1)
+    p2_int = int(p2)
+# Check length of animals.json
     print(check_animals_dict_length())
-    print(check_parents_index_range(p1,p2))
+# Check parent indices are in range of animals.json
+    print(check_parents_index_range(p1_int,p2_int))
+# Create outputs
     random_animal()
-    create_children(p1,p2)
+    create_children(p1_int,p2_int)
 
 if __name__ == "__main__":
     main()
