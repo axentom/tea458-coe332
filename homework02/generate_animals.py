@@ -1,6 +1,9 @@
+#!/usr/bin/env python3
+
 import json
 import random
 import petname
+import sys
 
 """ 
 This Function picks a random head for Dr. Moreau's beast
@@ -58,7 +61,7 @@ def main():
         animal = create_animal()
         animals_list['animal'].append(animal)
     
-    with open('animals.json', 'w') as out:
+    with open(sys.argv[1], 'w') as out:
         json.dump(animals_list, out, indent=2)
 
 if __name__ == '__main__':

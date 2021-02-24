@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 import json
 import random
 import sys
@@ -10,7 +12,7 @@ def check_parents_index_type(parent_index): # Checks to see if input parent inde
         return(f'Parent index: {parent_index} type FAIL')
 
 def check_animals_dict_length(): # Check to see if animals.json has enough values in it to breed
-    with open('animals.json', 'r') as f:
+    with open(sys.argv[1], 'r') as f:
         animals = json.load(f)
     count = len(animals['animal'])
     if (count < 2):
@@ -19,7 +21,7 @@ def check_animals_dict_length(): # Check to see if animals.json has enough value
         return('animals dict length pass')
 
 def check_parents_index_range(parent1_index, parent2_index): # Checks that the input indices are within the range of animals.json
-    with open('animals.json', 'r') as f:
+    with open(sys.argv[1], 'r') as f:
         animals = json.load(f)
     count = len(animals['animal'])
     if (parent1_index not in range(0,count)):
@@ -30,7 +32,7 @@ def check_parents_index_range(parent1_index, parent2_index): # Checks that the i
         return(f'Parent indices: {parent1_index} and {parent2_index} range pass')
 
 def create_children(parent1_index, parent2_index):
-    with open('animals.json', 'r') as f:
+    with open(sys.argv[1], 'r') as f:
         animals = json.load(f)
 
 # Grab parents from input indices
@@ -66,7 +68,7 @@ def create_children(parent1_index, parent2_index):
     print(child_list['animal'][0])
 
 def random_animal():
-    with open('animals.json', 'r') as f:
+    with open(sys.argv[1], 'r') as f:
         animals = json.load(f)
 
     print('One random animal:')
@@ -74,8 +76,8 @@ def random_animal():
 
 def main():
 # Recieve inputs and check type
-    p1 = (sys.argv[1])
-    p2 = (sys.argv[2])
+    p1 = (sys.argv[2])
+    p2 = (sys.argv[3])
     print(check_parents_index_type(p1))
     print(check_parents_index_type(p2))
 # Convert inputs to int
