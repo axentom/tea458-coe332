@@ -1,0 +1,144 @@
+{
+  "animal": [
+    {
+      "head": "bull",
+      "body": "amoeba-drum",
+      "arms": 8,
+      "legs": 12,
+      "tails": 20
+    },
+    {
+      "head": "lion",
+      "body": "troll-dory",
+      "arms": 6,
+      "legs": 3,
+      "tails": 9
+    },
+    {
+      "head": "snake",
+      "body": "poodle-bee",
+      "arms": 8,
+      "legs": 6,
+      "tails": 14
+    },
+    {
+      "head": "bull",
+      "body": "ferret-lark",
+      "arms": 10,
+      "legs": 12,
+      "tails": 22
+    },
+    {
+      "head": "bunny",
+      "body": "guinea-possum",
+      "arms": 2,
+      "legs": 12,
+      "tails": 14
+    },
+    {
+      "head": "raven",
+      "body": "owl-possum",
+      "arms": 2,
+      "legs": 12,
+      "tails": 14
+    },
+    {
+      "head": "raven",
+      "body": "duck-tapir",
+      "arms": 2,
+      "legs": 6,
+      "tails": 8
+    },
+    {
+      "head": "raven",
+      "body": "stork-beetle",
+      "arms": 2,
+      "legs": 12,
+      "tails": 14
+    },
+    {
+      "head": "snake",
+      "body": "bobcat-turkey",
+      "arms": 6,
+      "legs": 12,
+      "tails": 18
+    },
+    {
+      "head": "bunny",
+      "body": "emu-hippo",
+      "arms": 2,
+      "legs": 12,
+      "tails": 14
+    },
+    {
+      "head": "raven",
+      "body": "gar-bull",
+      "arms": 6,
+      "legs": 3,
+      "tails": 9
+    },
+    {
+      "head": "bunny",
+      "body": "sawfly-lion",
+      "arms": 10,
+      "legs": 3,
+      "tails": 13
+    },
+    {
+      "head": "raven",
+      "body": "teal-minnow",
+      "arms": 10,
+      "legs": 9,
+      "tails": 19
+    },
+    {
+      "head": "raven",
+      "body": "shrew-elk",
+      "arms": 2,
+      "legs": 3,
+      "tails": 5
+    },
+    {
+      "head": "snake",
+      "body": "impala-possum",
+      "arms": 10,
+      "legs": 3,
+      "tails": 13
+    },
+    {
+      "head": "bull",
+      "body": "swift-adder",
+      "arms": 10,
+      "legs": 9,
+      "tails": 19
+    },
+    {
+      "head": "bunny",
+      "body": "llama-boa",
+      "arms": 4,
+      "legs": 3,
+      "tails": 7
+    },
+    {
+      "head": "raven",
+      "body": "tick-horse",
+      "arms": 4,
+      "legs": 12,
+      "tails": 16
+    },
+    {
+      "head": "snake",
+      "body": "leech-boa",
+      "arms": 2,
+      "legs": 3,
+      "tails": 5
+    },
+    {
+      "head": "raven",
+      "body": "moth-swift",
+      "arms": 6,
+      "legs": 12,
+      "tails": 18
+    }
+  ]
+}
