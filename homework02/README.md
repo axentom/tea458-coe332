@@ -19,7 +19,7 @@ Pull generate_animals.py and read_animals.py from the github repo, ensure Python
 ## To build an image with the Dockerfile:
 >docker build -t (dockerhubusername)/(code):(version) . -f HW2_Dockerfile
 
-Useful command is listed above
+Useful command is listed above.
 You can also alternatively pull from dockerhub at axentom/homework02:1.1
 
 ## To run scripts inside container:
