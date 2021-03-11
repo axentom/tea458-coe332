@@ -1,6 +1,6 @@
 import requests
 
-response = requests.get(url="http://localhost:5050/animals")
+response = requests.get(url="http://localhost:5004/animals")
 
 #let's look at the response code
 
