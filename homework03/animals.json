@@ -2,143 +2,143 @@
   "animal": [
     {
       "head": "bunny",
-      "body": "roughy-hornet",
-      "arms": 8,
+      "body": "sloth-clam",
+      "arms": 6,
       "legs": 6,
-      "tails": 14
+      "tails": 12
     },
     {
-      "head": "raven",
-      "body": "hyena-bunny",
+      "head": "bunny",
+      "body": "kitten-doe",
       "arms": 10,
-      "legs": 9,
-      "tails": 19
+      "legs": 6,
+      "tails": 16
     },
     {
-      "head": "raven",
-      "body": "baboon-duck",
+      "head": "bunny",
+      "body": "caiman-piglet",
+      "arms": 8,
+      "legs": 9,
+      "tails": 17
+    },
+    {
+      "head": "bull",
+      "body": "baboon-camel",
+      "arms": 6,
+      "legs": 3,
+      "tails": 9
+    },
+    {
+      "head": "snake",
+      "body": "sponge-jackal",
       "arms": 8,
       "legs": 3,
       "tails": 11
     },
     {
       "head": "snake",
-      "body": "louse-rhino",
-      "arms": 6,
-      "legs": 6,
-      "tails": 12
-    },
-    {
-      "head": "bull",
-      "body": "shiner-stork",
-      "arms": 10,
-      "legs": 12,
-      "tails": 22
-    },
-    {
-      "head": "raven",
-      "body": "pony-kite",
-      "arms": 6,
-      "legs": 12,
-      "tails": 18
-    },
-    {
-      "head": "bull",
-      "body": "newt-liger",
-      "arms": 2,
-      "legs": 3,
-      "tails": 5
-    },
-    {
-      "head": "snake",
-      "body": "donkey-crab",
-      "arms": 6,
-      "legs": 12,
-      "tails": 18
-    },
-    {
-      "head": "bull",
-      "body": "viper-bunny",
-      "arms": 8,
-      "legs": 9,
-      "tails": 17
-    },
-    {
-      "head": "raven",
-      "body": "pup-cod",
-      "arms": 6,
-      "legs": 9,
-      "tails": 15
-    },
-    {
-      "head": "raven",
-      "body": "viper-sheep",
-      "arms": 4,
-      "legs": 12,
-      "tails": 16
-    },
-    {
-      "head": "bunny",
-      "body": "moray-robin",
+      "body": "gecko-gecko",
       "arms": 4,
       "legs": 6,
       "tails": 10
     },
     {
-      "head": "lion",
-      "body": "mayfly-hermit",
-      "arms": 10,
-      "legs": 12,
-      "tails": 22
-    },
-    {
-      "head": "lion",
-      "body": "crow-pug",
-      "arms": 10,
-      "legs": 12,
-      "tails": 22
+      "head": "bunny",
+      "body": "lab-spider",
+      "arms": 2,
+      "legs": 3,
+      "tails": 5
     },
     {
       "head": "raven",
-      "body": "cougar-dove",
+      "body": "dingo-lizard",
+      "arms": 8,
+      "legs": 12,
+      "tails": 20
+    },
+    {
+      "head": "lion",
+      "body": "snake-mule",
+      "arms": 6,
+      "legs": 6,
+      "tails": 12
+    },
+    {
+      "head": "snake",
+      "body": "eel-wren",
       "arms": 10,
       "legs": 3,
       "tails": 13
-    },
-    {
-      "head": "raven",
-      "body": "crane-koala",
-      "arms": 6,
-      "legs": 12,
-      "tails": 18
     },
     {
       "head": "bunny",
-      "body": "alien-coyote",
-      "arms": 4,
-      "legs": 9,
-      "tails": 13
-    },
-    {
-      "head": "bull",
-      "body": "dingo-guppy",
-      "arms": 10,
-      "legs": 3,
-      "tails": 13
-    },
-    {
-      "head": "bull",
-      "body": "krill-calf",
+      "body": "fox-falcon",
       "arms": 6,
       "legs": 3,
       "tails": 9
     },
     {
       "head": "raven",
-      "body": "rhino-dassie",
+      "body": "mammal-grouse",
+      "arms": 6,
+      "legs": 9,
+      "tails": 15
+    },
+    {
+      "head": "snake",
+      "body": "ghost-spider",
+      "arms": 6,
+      "legs": 9,
+      "tails": 15
+    },
+    {
+      "head": "bull",
+      "body": "kite-wren",
+      "arms": 10,
+      "legs": 9,
+      "tails": 19
+    },
+    {
+      "head": "bull",
+      "body": "trout-oriole",
+      "arms": 8,
+      "legs": 6,
+      "tails": 14
+    },
+    {
+      "head": "lion",
+      "body": "goblin-foal",
       "arms": 10,
       "legs": 12,
       "tails": 22
+    },
+    {
+      "head": "bull",
+      "body": "gibbon-goat",
+      "arms": 10,
+      "legs": 3,
+      "tails": 13
+    },
+    {
+      "head": "snake",
+      "body": "egret-alien",
+      "arms": 4,
+      "legs": 6,
+      "tails": 10
+    },
+    {
+      "head": "raven",
+      "body": "troll-stag",
+      "arms": 8,
+      "legs": 12,
+      "tails": 20
+    },
+    {
+      "head": "lion",
+      "body": "glider-hound",
+      "arms": 2,
+      "legs": 3,
+      "tails": 5
     }
   ]
 }
