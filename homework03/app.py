@@ -1,5 +1,7 @@
+import generate_animals
 import json
 from flask import Flask, request
+
 app = Flask(__name__)
 
 @app.route('/', methods = ['GET'])
@@ -17,6 +19,11 @@ def hello_name1():
         print (i)
     name = request.args.get('name')
     return 'Hello {}\n'.format(name)
+
+@app.route('/makeanimals', methods = ['GET'])
+def make_animals():
+    generate_animals.main()
+    return json.dumps(get_data())
 
 @app.route('/animals', methods = ['GET'])
 def get_animals():
