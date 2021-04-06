@@ -1,0 +1,30 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: axentom-test-redis-deployment
+  labels:
+    username: axentom
+    env: test
+    app: axentom-test-redis
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: axentom-test-redis
+  template:
+    metadata:
+      labels:
+        app: axentom-test-redis
+    spec:
+      containers:
+        - name: axentom-test-redis-pod
+          imagePullPolicy: Always
+          image: redis:5.0.0
+          volumeMounts:
+          - name: axentom-test-redis-pvc
+            mountPath: "/data"
+      volumes:
+      - name: axentom-test-redis-pvc
+        persistentVolumeClaim:
+          claimName: axentom-test-redis-pvc

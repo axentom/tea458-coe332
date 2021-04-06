@@ -1,0 +1,29 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: axentom-test-flask-deployment
+  labels:
+    username: axentom
+    env: test
+    app: axentom-test-flask
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: axentom-test-flask
+  template:
+    metadata:
+      labels:
+        app: axentom-test-flask
+    spec:
+      containers:
+        - name: axentom-test-flask-pod
+          imagePullPolicy: IfNotPresent
+          image: axentom/axentom_web:midtermProjectWebApp
+          env:
+          - name: FLASK_APP
+            value: "app.py"
+          ports:
+          - name: http
+            containerPort: 5000
