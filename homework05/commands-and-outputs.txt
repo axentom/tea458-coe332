@@ -1,0 +1,52 @@
+A)
+1.
+[axentom@isp02 homework05]$ alias k=kubectl
+[axentom@isp02 homework05]$ k apply -f hello-name-pod.yml 
+
+2.
+[axentom@isp02 homework05]$ k get pods --selector "greeting=personalized"
+NAME    READY   STATUS    RESTARTS   AGE
+hello   1/1     Running   0          45s
+
+3.
+[axentom@isp02 homework05]$ k logs hello
+Hello, 
+Yes, because no environment variable was assigned for $NAME
+
+4.
+[axentom@isp02 homework05]$ k delete pods hello
+
+B)
+1.
+[axentom@isp02 homework05]$ k apply -f hello-name-pod.yml
+
+2.
+[axentom@isp02 homework05]$ k logs hello
+Hello, Thomas
+
+3.
+[axentom@isp02 homework05]$ k delete pods hello
+
+C)
+1.
+[axentom@isp02 homework05]$ k apply -f hello-name-deployment.yml
+deployment.apps/hwk5-deployment created
+
+2.
+[axentom@isp02 homework05]$ k get pods -o wide
+NAME                               READY   STATUS    RESTARTS   AGE   IP            NODE                         NOMINATED NODE   READINESS GATES
+hwk5-deployment-79846d874d-2tll9   1/1     Running   0          10s   10.244.7.99   c05                          <none>           <none>
+hwk5-deployment-79846d874d-bk5z4   1/1     Running   0          10s   10.244.10.4   c009.rodeo.tacc.utexas.edu   <none>           <none>
+hwk5-deployment-79846d874d-gz5ml   1/1     Running   0          10s   10.244.3.82   c01                          <none>           <none>
+
+3.
+[axentom@isp02 homework05]$ k logs hwk5-deployment-79846d874d-2tll9
+Hello, Thomas from IP 10.244.7.99
+[axentom@isp02 homework05]$ k logs hwk5-deployment-79846d874d-bk5z4
+Hello, Thomas from IP 10.244.10.4
+[axentom@isp02 homework05]$ k logs hwk5-deployment-79846d874d-gz5ml
+Hello, Thomas from IP 10.244.3.82
+
+Yes, this matches up with the IP addresses shown from the get command in part 2
+
+
