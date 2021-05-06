@@ -6,3 +6,4 @@ def execute_job(jid):
     time.sleep(15)
     update_job_status(jid, "complete")
 
+execute_job()
