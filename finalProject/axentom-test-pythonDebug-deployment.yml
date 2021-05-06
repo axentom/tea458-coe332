@@ -6,7 +6,7 @@ metadata:
   labels:
     app: py-app
 spec:
-  replicas: 1
+  replicas: 2
   selector:
     matchLabels:
       app: py-app
@@ -17,5 +17,5 @@ spec:
     spec:
       containers:
         - name: py39
-          image: python:3.9
+          image: jstubbs/redis-client
           command: ['sleep', '999999999']
