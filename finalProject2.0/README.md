@@ -159,17 +159,29 @@ curl 10.101.149.233:5000/get
 2) Create - Create entry
 
 Arguments:
+
 `id_no` : Animal ID to search by
+
 `name` : Animal name
+
 `datetime` : Date and Time of outcome occurrence in format: "MM/DD/YYYY HH:MM:SS XM"
+
 `monthyear` : Month and Year of outcome occurrence in format: "MM/DD/YYYY HH:MM:SS XM"
+
 `dob` : Date of Birth in format: "MM/DD/YYYY"
+
 `outcome_type` : Type of outcome, example: "Adoption"
+
 `outcome_subtype` : Subtype of outcome
+
 `animal_type` : Species
+
 `sex` : Animal sex at outcome occurrence
+
 `age` : Animal age at outcome occurrence
+
 `breed` : Animal breed
+
 `color` : Animal color
 
 ```bash
@@ -179,6 +191,7 @@ curl 10.101.149.233:5000//create/<id_no>/<name>/<datetime>/<monthyear>/<dob>/<ou
 3) Read - Output entry by Animal ID
 
 Arguments:
+
 `id_no` : Animal ID to search by
 
 ```bash
@@ -188,8 +201,11 @@ curl 10.101.149.233:5000/read/<id_no>
 4) Update - Edit value at designated key for entry by Animal ID
 
 Arguments:
+
 `id_no` : Animal ID to search by
+
 `key` : Key value for desired update value
+
 `new_value` : Desired update value
 
 ```bash
@@ -199,6 +215,7 @@ curl 10.101.149.233:5000/read/<id_no>/update/<key>/<new_value>
 5) Destroy - Delete entry by Animal ID
 
 Arguments:
+
 `id_no` : Animal ID to search by
 
 ```bash
