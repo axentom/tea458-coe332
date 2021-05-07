@@ -1,0 +1,17 @@
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: axentom-prod-flask-service
+  labels:
+    username: axentom
+    env: prod
+    app: axentom-prod-flask
+spec:
+  type: ClusterIP
+  selector:
+    app: axentom-prod-flask
+  ports:
+  - name: axentom-prod-flask
+    port: 5000
+    targetPort: 5000

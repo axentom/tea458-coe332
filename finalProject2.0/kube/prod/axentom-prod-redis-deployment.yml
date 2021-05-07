@@ -1,0 +1,39 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: axentom-prod-redis-deployment
+  labels:
+    username: axentom
+    env: prod
+    app: axentom-prod-redis
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      username: axentom
+      env: prod
+      app: axentom-prod-redis
+  template:
+    metadata:
+      labels:
+        username: axentom
+        env: prod
+        app: axentom-prod-redis
+    spec:
+      containers:
+        - name: axentom-prod-redis-pod
+          imagePullPolicy: Always
+          image: redis:5.0.0
+          env:
+            - name: "REDIS_IP"
+              valueFrom:
+                fieldRef:
+                  fieldPath: status.podIP
+          volumeMounts:
+          - name: axentom-prod-redis-pvc
+            mountPath: "/data"
+      volumes:
+      - name: axentom-prod-redis-pvc
+        persistentVolumeClaim:
+          claimName: axentom-prod-redis-pvc

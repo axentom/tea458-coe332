@@ -4,7 +4,6 @@ from redis import StrictRedis
 import os
 
 rd_ip = '10.110.179.174'
-#rd_ip = os.environ['REDIS_IP'] # goes straight to redis deployment pod and skips redis service
 q = HotQueue("queue", host=rd_ip, port=6379, db=1)
 rd = StrictRedis(host=rd_ip, port=6379, db=0)
 

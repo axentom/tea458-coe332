@@ -1,0 +1,28 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: axentom-prod-flask-deployment
+  labels:
+    username: axentom
+    env: prod
+    app: axentom-prod-flask
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: axentom-prod-flask
+  template:
+    metadata:
+      labels:
+        username: axentom
+        evn: prod
+        app: axentom-prod-flask
+    spec:
+      containers:
+        - name: axentom-prod-flask-pod
+          imagePullPolicy: Always
+          image: axentom/final-project-api:1.0
+          ports:
+          - name: flask
+            containerPort: 5000
