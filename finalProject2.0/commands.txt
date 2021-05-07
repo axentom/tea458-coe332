@@ -1,0 +1,14 @@
+Useful commands:
+
+Docker Build from source/:
+docker build -f ../docker/Dockerfile.api -t axentom/final-project-api:1.0 .
+docker build -f ../docker/Dockerfile.wrk -t axentom/final-project-wrk:1.0 .
+
+docker push axentom/final-project-api:1.0
+docker push axentom/final-project-wrk:1.0
+
+Kubectl Exec:
+k exec -it <pod> -- /bin/bash
+
+curl:
+curl <flask-service-ip>:5000/jobs -X POST -d '{"start": "now","end":"later"}'

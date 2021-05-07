@@ -4,6 +4,10 @@ import jobs
 
 app = Flask(__name__)
 
+@app.route('/hello', methods = ['GET'])
+def helloworld():
+    return "Hello!\n"
+
 @app.route('/jobs', methods=['POST'])
 def jobs_api():
     try:

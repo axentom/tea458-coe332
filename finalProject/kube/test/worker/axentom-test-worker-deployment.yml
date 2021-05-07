@@ -1,0 +1,31 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: axentom-test-worker-deployment
+  labels:
+    username: axentom
+    env: test
+    app: axentom-test-worker
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: axentom-test-worker
+  template:
+    metadata:
+      labels:
+        app: axentom-test-worker
+    spec:
+      containers:
+        - name: axentom-test-worker-pod
+          imagePullPolicy: Always
+          image: axentom/axentom_web:finalProject
+          command: ["python", "worker.py"]
+          env:
+          - name: WORKER_IP
+            valueFrom:
+              fieldRef:
+                fieldPath: status.podIP
+          - name: REDIS_IP
+            value: "10.104.104.77"

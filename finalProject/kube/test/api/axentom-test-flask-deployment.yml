@@ -8,7 +8,7 @@ metadata:
     env: test
     app: axentom-test-flask
 spec:
-  replicas: 2
+  replicas: 1
   selector:
     matchLabels:
       app: axentom-test-flask
@@ -19,11 +19,9 @@ spec:
     spec:
       containers:
         - name: axentom-test-flask-pod
-          imagePullPolicy: IfNotPresent
-          image: axentom/axentom_web:midtermProjectWebApp
-          env:
-          - name: FLASK_APP
-            value: "app.py"
+          imagePullPolicy: Always
+          image: axentom/axentom_web:finalProject
+          command: ["python", "api.py"]
           ports:
           - name: http
             containerPort: 5000

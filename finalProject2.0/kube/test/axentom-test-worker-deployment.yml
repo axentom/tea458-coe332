@@ -1,0 +1,30 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: axentom-test-worker-deployment
+  labels:
+    username: axentom 
+    env: test
+    app: axentom-test-worker
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: axentom-test-worker
+  template:
+    metadata:
+      labels:
+        username: axentom
+        env: test
+        app: axentom-test-worker
+    spec:
+      containers:
+        - name: axentom-test-worker-pod
+          imagePullPolicy: Always
+          image: axentom/final-project-wrk:1.0
+          env:
+            - name: "WORKER_IP"
+              valueFrom:
+                fieldRef:
+                  fieldPath: status.podIP
