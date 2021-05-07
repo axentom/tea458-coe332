@@ -20,6 +20,7 @@ axentom-test-redis-service   ClusterIP   10.110.179.174   <none>        6379/TCP
 ```
 
 3) Enter jobs.py with text editor of choice and set ip address string variable found on line 6 as redis-service ip
+
 (Example shown with vi, jobs.py file found in finalProject2.0/source/ directory):
 
 ```bash
@@ -41,6 +42,7 @@ rd_ip = '10.110.179.174'
 4) Load data. Accepted data is in JSON format. CSV-to-JSON converter script is provided as finalProject2.0/source/csv2json.py.
 
 5) Build Docker images from Dockerfiles found in finalProject2.0/docker/ directory
+
 (Example build commands must be completed from finalProject2.0/source/ directory)
 
 ```bash
@@ -49,6 +51,7 @@ rd_ip = '10.110.179.174'
 ```
 
 Please note argument for -t flag should be changed to user tag in order to be able to push to DockerHub.
+
 -t flag takes argument in the form: `<dockerhub-username>/<repo>:<version>`
 
 6) Push Docker images to DockerHub (push argument must match -t arguments used in previous step)
@@ -94,6 +97,7 @@ Please note that these image: arguments must match -t arguments pushed to Docker
 ```
 
 9) Review output and then repeat for prod environment
+
 Note: Redis-DB data initialization completed in User Workflow Steps 1-5
 
 ## User Guide ##
@@ -138,6 +142,7 @@ axentom-test-flask-service   ClusterIP   10.101.149.233   <none>        5000/TCP
 ```
 
 5) Run user commands by curling to flask-service-ip at port 5000
+
 IMPORTANT: first route must hit the /loaddata route in order to initialize Redis-DB with data from data.json
 
 ```bash
@@ -152,6 +157,7 @@ curl 10.101.149.233:5000/loaddata
 curl 10.101.149.233:5000/get
 ``` 
 2) Create - Create entry
+
 Arguments:
 `id_no` : Animal ID to search by
 `name` : Animal name
@@ -171,6 +177,7 @@ curl 10.101.149.233:5000//create/<id_no>/<name>/<datetime>/<monthyear>/<dob>/<ou
 ```
 
 3) Read - Output entry by Animal ID
+
 Arguments:
 `id_no` : Animal ID to search by
 
@@ -179,6 +186,7 @@ curl 10.101.149.233:5000/read/<id_no>
 ```
 
 4) Update - Edit value at designated key for entry by Animal ID
+
 Arguments:
 `id_no` : Animal ID to search by
 `key` : Key value for desired update value
@@ -189,6 +197,7 @@ curl 10.101.149.233:5000/read/<id_no>/update/<key>/<new_value>
 ```
 
 5) Destroy - Delete entry by Animal ID
+
 Arguments:
 `id_no` : Animal ID to search by
 
@@ -197,6 +206,7 @@ curl 10.101.149.233:5000/delete/<id_no>
 ```
 
 6) Job - Create bar plot of adoption ages of adopted animals
+
 (Output in PNG format, sent to finalProject2.0/sources/ directory)
 
 ```bash
